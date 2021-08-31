@@ -8,18 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		D508BAAE26DC1B48004A0341 /* Order_AheadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BAAD26DC1B48004A0341 /* Order_AheadApp.swift */; };
-		D508BAB026DC1B48004A0341 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BAAF26DC1B48004A0341 /* ContentView.swift */; };
+		D508BAB026DC1B48004A0341 /* ItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BAAF26DC1B48004A0341 /* ItemCard.swift */; };
 		D508BAB226DC1B49004A0341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D508BAB126DC1B49004A0341 /* Assets.xcassets */; };
 		D508BAB526DC1B49004A0341 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D508BAB426DC1B49004A0341 /* Preview Assets.xcassets */; };
+		D508BABE26DC3CDF004A0341 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BABD26DC3CDF004A0341 /* Item.swift */; };
+		D508BAC326DC4143004A0341 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BAC226DC4143004A0341 /* ItemListView.swift */; };
+		D508BAC726DC45EF004A0341 /* TypeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BAC626DC45EF004A0341 /* TypeListView.swift */; };
+		D508BACB26DC4684004A0341 /* TypeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BACA26DC4684004A0341 /* TypeCard.swift */; };
+		D508BACF26DC47FB004A0341 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BACE26DC47FB004A0341 /* ItemList.swift */; };
+		D508BAD526DC7F3A004A0341 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BAD426DC7F3A004A0341 /* StoreView.swift */; };
+		D5883CCF26DD9F3A006A6C62 /* VTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5883CCE26DD9F3A006A6C62 /* VTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D508BAAA26DC1B48004A0341 /* Order Ahead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Order Ahead.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D508BAAD26DC1B48004A0341 /* Order_AheadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order_AheadApp.swift; sourceTree = "<group>"; };
-		D508BAAF26DC1B48004A0341 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D508BAAF26DC1B48004A0341 /* ItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCard.swift; sourceTree = "<group>"; };
 		D508BAB126DC1B49004A0341 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D508BAB426DC1B49004A0341 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D508BAB626DC1B49004A0341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D508BABD26DC3CDF004A0341 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D508BAC226DC4143004A0341 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		D508BAC626DC45EF004A0341 /* TypeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeListView.swift; sourceTree = "<group>"; };
+		D508BACA26DC4684004A0341 /* TypeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCard.swift; sourceTree = "<group>"; };
+		D508BACE26DC47FB004A0341 /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
+		D508BAD426DC7F3A004A0341 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		D5883CCE26DD9F3A006A6C62 /* VTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				D508BAAD26DC1B48004A0341 /* Order_AheadApp.swift */,
-				D508BAAF26DC1B48004A0341 /* ContentView.swift */,
+				D508BAD426DC7F3A004A0341 /* StoreView.swift */,
+				D508BAC626DC45EF004A0341 /* TypeListView.swift */,
+				D508BACA26DC4684004A0341 /* TypeCard.swift */,
+				D508BAC226DC4143004A0341 /* ItemListView.swift */,
+				D508BAAF26DC1B48004A0341 /* ItemCard.swift */,
+				D508BACE26DC47FB004A0341 /* ItemList.swift */,
+				D508BABD26DC3CDF004A0341 /* Item.swift */,
+				D5883CCE26DD9F3A006A6C62 /* VTabView.swift */,
 				D508BAB126DC1B49004A0341 /* Assets.xcassets */,
 				D508BAB626DC1B49004A0341 /* Info.plist */,
 				D508BAB326DC1B49004A0341 /* Preview Content */,
@@ -138,8 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D508BAB026DC1B48004A0341 /* ContentView.swift in Sources */,
+				D508BAB026DC1B48004A0341 /* ItemCard.swift in Sources */,
+				D508BACB26DC4684004A0341 /* TypeCard.swift in Sources */,
+				D508BAD526DC7F3A004A0341 /* StoreView.swift in Sources */,
+				D508BABE26DC3CDF004A0341 /* Item.swift in Sources */,
+				D508BACF26DC47FB004A0341 /* ItemList.swift in Sources */,
+				D5883CCF26DD9F3A006A6C62 /* VTabView.swift in Sources */,
 				D508BAAE26DC1B48004A0341 /* Order_AheadApp.swift in Sources */,
+				D508BAC726DC45EF004A0341 /* TypeListView.swift in Sources */,
+				D508BAC326DC4143004A0341 /* ItemListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +297,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Order Ahead/Preview Content\"";
+				DEVELOPMENT_TEAM = N3FJ99A53H;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Order Ahead/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -290,6 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Order Ahead/Preview Content\"";
+				DEVELOPMENT_TEAM = N3FJ99A53H;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Order Ahead/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

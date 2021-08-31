@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
+
 struct Order_AheadApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StoreView()
         }
     }
 }
