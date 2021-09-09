@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>185902423247-o79ekkpkmkhv1vo7qg6kcjujrp24b419.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.185902423247-o79ekkpkmkhv1vo7qg6kcjujrp24b419</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD3qV8sevzabpKqL6ke5zCJWQd6OQoZr4M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>185902423247</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.yakden.Order-Ahead</string>
+	<key>PROJECT_ID</key>
+	<string>yakden-orderahead</string>
+	<key>STORAGE_BUCKET</key>
+	<string>yakden-orderahead.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:185902423247:ios:b69722c10bde941410abba</string>
+</dict>
+</plist>

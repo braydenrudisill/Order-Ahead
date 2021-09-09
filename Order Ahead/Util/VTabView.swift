@@ -21,7 +21,6 @@ struct VTabView<Content: View>: View {
                 Group{
                     content
                 }
-                
                 .rotationEffect(.degrees(-90)) // Rotate content
                 .frame(
                     width: proxy.size.width,

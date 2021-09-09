@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
-        Text("test")
-            .padding()
-    }
-}
-
 struct ItemCard: View {
     var item: Item
     var body: some View {

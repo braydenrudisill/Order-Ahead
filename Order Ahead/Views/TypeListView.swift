@@ -37,7 +37,7 @@ struct TypeListView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct TypeListView_Previews: PreviewProvider {
     static var previews: some View {
         TypeListView()
     }
