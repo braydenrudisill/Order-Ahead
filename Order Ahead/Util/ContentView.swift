@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        BusinessListView()
+        NavigationView{
+//            BusinessListView(businessListViewModel: BusinessListViewModel())
+//            NewBusinessForm(businessListViewModel: BusinessListViewModel())
+            NewBusinessForm(menu: typeList, businessListViewModel: BusinessListViewModel())
+        }
     }
 }
 

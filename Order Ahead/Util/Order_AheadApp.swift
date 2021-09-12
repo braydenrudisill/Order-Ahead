@@ -14,6 +14,7 @@ let BackendUrl = "http://127.0.0.1:4242/"
 
 @main
 struct Order_AheadApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     init() {
         let url = URL(string: BackendUrl + "config")!
         var request = URLRequest(url: url)
@@ -35,13 +36,18 @@ struct Order_AheadApp: App {
         task.resume()
     }
     
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     
     var body: some Scene {
         WindowGroup {
-            ContentView().onOpenURL(perform: { url in
+            ContentView()
+            .onOpenURL(perform: { url in
                 let stripeHandled = StripeAPI.handleURLCallback(with: url)
-                if(!stripeHandled) {
+                print(url)
+                print("YOO")
+                if(stripeHandled) {
+                    // Redirect to dashboard
+                } else {
                     // Not a stripe URL, meant to handle normally
                 }
             })

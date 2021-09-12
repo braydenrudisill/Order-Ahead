@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93740D8AFA34C746EDE45D25 /* Pods_Order_Ahead.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CA80B3899ACC32E72ED965 /* Pods_Order_Ahead.framework */; };
 		D508BAAE26DC1B48004A0341 /* Order_AheadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BAAD26DC1B48004A0341 /* Order_AheadApp.swift */; };
 		D508BAB026DC1B48004A0341 /* ItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BAAF26DC1B48004A0341 /* ItemCard.swift */; };
 		D508BAB226DC1B49004A0341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D508BAB126DC1B49004A0341 /* Assets.xcassets */; };
@@ -17,10 +18,30 @@
 		D508BACB26DC4684004A0341 /* TypeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BACA26DC4684004A0341 /* TypeCard.swift */; };
 		D508BACF26DC47FB004A0341 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BACE26DC47FB004A0341 /* ItemList.swift */; };
 		D508BAD526DC7F3A004A0341 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BAD426DC7F3A004A0341 /* StoreView.swift */; };
+		D5217F9426E1216E008CB381 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5217F9326E1216E008CB381 /* Profile.swift */; };
+		D52863E226ED58AC00DACA2B /* ItemListFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52863E126ED58AC00DACA2B /* ItemListFormView.swift */; };
+		D52863E526EE7B6400DACA2B /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52863E426EE7B6400DACA2B /* SessionStore.swift */; };
+		D54DF16226DF1A6200F8B189 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D54DF16126DF1A6200F8B189 /* GoogleService-Info.plist */; };
 		D5883CCF26DD9F3A006A6C62 /* VTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5883CCE26DD9F3A006A6C62 /* VTabView.swift */; };
+		D5A6EEF126E51784000D70B6 /* StripeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A6EEF026E51784000D70B6 /* StripeCard.swift */; };
+		D5A6EEF626E554AF000D70B6 /* BackendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A6EEF526E554AF000D70B6 /* BackendModel.swift */; };
+		D5A6EEFA26E69E75000D70B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A6EEF926E69E75000D70B6 /* ContentView.swift */; };
+		D5BC9B3D26EA9FD300B031ED /* TopLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BC9B3C26EA9FD300B031ED /* TopLeft.swift */; };
+		D5D5F4C026E7BD0100B24B0D /* BusinessRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F4BF26E7BD0100B24B0D /* BusinessRepository.swift */; };
+		D5D5F4C426E7BDD900B24B0D /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F4C326E7BDD900B24B0D /* Business.swift */; };
+		D5D5F53B26E7C1FE00B24B0D /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F53A26E7C1FE00B24B0D /* AuthenticationService.swift */; };
+		D5D5F54126E7C23B00B24B0D /* BusinessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F54026E7C23B00B24B0D /* BusinessViewModel.swift */; };
+		D5D5F54426E7C33800B24B0D /* BusinessListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F54326E7C33800B24B0D /* BusinessListViewModel.swift */; };
+		D5D5F5AA26E7C50E00B24B0D /* BusinessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F5A726E7C50E00B24B0D /* BusinessView.swift */; };
+		D5D5F5AB26E7C50E00B24B0D /* BusinessListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F5A826E7C50E00B24B0D /* BusinessListView.swift */; };
+		D5D5F5AC26E7C50E00B24B0D /* NewBusinessForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F5A926E7C50E00B24B0D /* NewBusinessForm.swift */; };
+		D5FEDA5226DF1F53007DB078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FEDA5126DF1F53007DB078 /* AppDelegate.swift */; };
+		D5FEDA5726DF39BF007DB078 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FEDA5626DF39BF007DB078 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		145FC4A7B2DBB755B495A473 /* Pods-Order Ahead.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Order Ahead.release.xcconfig"; path = "Target Support Files/Pods-Order Ahead/Pods-Order Ahead.release.xcconfig"; sourceTree = "<group>"; };
+		58A298B699D271FB10720EC1 /* Pods-Order Ahead.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Order Ahead.debug.xcconfig"; path = "Target Support Files/Pods-Order Ahead/Pods-Order Ahead.debug.xcconfig"; sourceTree = "<group>"; };
 		D508BAAA26DC1B48004A0341 /* Order Ahead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Order Ahead.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D508BAAD26DC1B48004A0341 /* Order_AheadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order_AheadApp.swift; sourceTree = "<group>"; };
 		D508BAAF26DC1B48004A0341 /* ItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCard.swift; sourceTree = "<group>"; };
@@ -33,7 +54,26 @@
 		D508BACA26DC4684004A0341 /* TypeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCard.swift; sourceTree = "<group>"; };
 		D508BACE26DC47FB004A0341 /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
 		D508BAD426DC7F3A004A0341 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		D5217F9326E1216E008CB381 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		D52863E126ED58AC00DACA2B /* ItemListFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListFormView.swift; sourceTree = "<group>"; };
+		D52863E426EE7B6400DACA2B /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		D54DF16126DF1A6200F8B189 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5883CCE26DD9F3A006A6C62 /* VTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTabView.swift; sourceTree = "<group>"; };
+		D5A6EEF026E51784000D70B6 /* StripeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeCard.swift; sourceTree = "<group>"; };
+		D5A6EEF526E554AF000D70B6 /* BackendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendModel.swift; sourceTree = "<group>"; };
+		D5A6EEF926E69E75000D70B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D5BC9B3C26EA9FD300B031ED /* TopLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLeft.swift; sourceTree = "<group>"; };
+		D5D5F4BF26E7BD0100B24B0D /* BusinessRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRepository.swift; sourceTree = "<group>"; };
+		D5D5F4C326E7BDD900B24B0D /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		D5D5F53A26E7C1FE00B24B0D /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		D5D5F54026E7C23B00B24B0D /* BusinessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessViewModel.swift; sourceTree = "<group>"; };
+		D5D5F54326E7C33800B24B0D /* BusinessListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewModel.swift; sourceTree = "<group>"; };
+		D5D5F5A726E7C50E00B24B0D /* BusinessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessView.swift; sourceTree = "<group>"; };
+		D5D5F5A826E7C50E00B24B0D /* BusinessListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessListView.swift; sourceTree = "<group>"; };
+		D5D5F5A926E7C50E00B24B0D /* NewBusinessForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBusinessForm.swift; sourceTree = "<group>"; };
+		D5FEDA5126DF1F53007DB078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5FEDA5626DF39BF007DB078 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E1CA80B3899ACC32E72ED965 /* Pods_Order_Ahead.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Order_Ahead.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +81,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93740D8AFA34C746EDE45D25 /* Pods_Order_Ahead.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DE0790FE61BF42E468DAE38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1CA80B3899ACC32E72ED965 /* Pods_Order_Ahead.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EBA030D97EF289B7A51DBA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58A298B699D271FB10720EC1 /* Pods-Order Ahead.debug.xcconfig */,
+				145FC4A7B2DBB755B495A473 /* Pods-Order Ahead.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D508BAA126DC1B48004A0341 = {
 			isa = PBXGroup;
 			children = (
 				D508BAAC26DC1B48004A0341 /* Order Ahead */,
 				D508BAAB26DC1B48004A0341 /* Products */,
+				7EBA030D97EF289B7A51DBA7 /* Pods */,
+				2DE0790FE61BF42E468DAE38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,16 +126,14 @@
 		D508BAAC26DC1B48004A0341 /* Order Ahead */ = {
 			isa = PBXGroup;
 			children = (
-				D508BAAD26DC1B48004A0341 /* Order_AheadApp.swift */,
-				D508BAD426DC7F3A004A0341 /* StoreView.swift */,
-				D508BAC626DC45EF004A0341 /* TypeListView.swift */,
-				D508BACA26DC4684004A0341 /* TypeCard.swift */,
-				D508BAC226DC4143004A0341 /* ItemListView.swift */,
-				D508BAAF26DC1B48004A0341 /* ItemCard.swift */,
-				D508BACE26DC47FB004A0341 /* ItemList.swift */,
-				D508BABD26DC3CDF004A0341 /* Item.swift */,
-				D5883CCE26DD9F3A006A6C62 /* VTabView.swift */,
+				D5D5F53D26E7C22900B24B0D /* View Models */,
+				D5D5F4BE26E7BCE800B24B0D /* Repositories */,
+				D5FEDA5426DF230A007DB078 /* Views */,
+				D5FEDA5526DF2351007DB078 /* Util */,
+				D5A6EEF326E55484000D70B6 /* Classes */,
+				D5A6EEF426E55497000D70B6 /* Model */,
 				D508BAB126DC1B49004A0341 /* Assets.xcassets */,
+				D54DF16126DF1A6200F8B189 /* GoogleService-Info.plist */,
 				D508BAB626DC1B49004A0341 /* Info.plist */,
 				D508BAB326DC1B49004A0341 /* Preview Content */,
 			);
@@ -90,6 +148,106 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D52863E726EE7C7F00DACA2B /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				D508BAD426DC7F3A004A0341 /* StoreView.swift */,
+				D508BAC626DC45EF004A0341 /* TypeListView.swift */,
+				D508BACA26DC4684004A0341 /* TypeCard.swift */,
+				D508BAC226DC4143004A0341 /* ItemListView.swift */,
+				D508BAAF26DC1B48004A0341 /* ItemCard.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		D52863E826EE7CAE00DACA2B /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5883CCE26DD9F3A006A6C62 /* VTabView.swift */,
+				D5BC9B3C26EA9FD300B031ED /* TopLeft.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		D52863E926EE7CC500DACA2B /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				D5D5F53A26E7C1FE00B24B0D /* AuthenticationService.swift */,
+				D52863E426EE7B6400DACA2B /* SessionStore.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		D5A6EEF326E55484000D70B6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D508BACE26DC47FB004A0341 /* ItemList.swift */,
+				D508BABD26DC3CDF004A0341 /* Item.swift */,
+				D5217F9326E1216E008CB381 /* Profile.swift */,
+				D5D5F4C326E7BDD900B24B0D /* Business.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D5A6EEF426E55497000D70B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5A6EEF526E554AF000D70B6 /* BackendModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5D5F4BE26E7BCE800B24B0D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D5D5F4BF26E7BD0100B24B0D /* BusinessRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D5D5F53D26E7C22900B24B0D /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5D5F54026E7C23B00B24B0D /* BusinessViewModel.swift */,
+				D5D5F54326E7C33800B24B0D /* BusinessListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		D5D5F5A626E7C50E00B24B0D /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				D5D5F5A726E7C50E00B24B0D /* BusinessView.swift */,
+				D5D5F5A826E7C50E00B24B0D /* BusinessListView.swift */,
+				D5D5F5A926E7C50E00B24B0D /* NewBusinessForm.swift */,
+				D52863E126ED58AC00DACA2B /* ItemListFormView.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		D5FEDA5426DF230A007DB078 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D52863E726EE7C7F00DACA2B /* Menu */,
+				D5D5F5A626E7C50E00B24B0D /* Business */,
+				D5FEDA5626DF39BF007DB078 /* LoginView.swift */,
+				D5A6EEF026E51784000D70B6 /* StripeCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5FEDA5526DF2351007DB078 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D52863E826EE7CAE00DACA2B /* Custom Views */,
+				D52863E926EE7CC500DACA2B /* Firebase */,
+				D5A6EEF926E69E75000D70B6 /* ContentView.swift */,
+				D5FEDA5126DF1F53007DB078 /* AppDelegate.swift */,
+				D508BAAD26DC1B48004A0341 /* Order_AheadApp.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D508BAB926DC1B49004A0341 /* Build configuration list for PBXNativeTarget "Order Ahead" */;
 			buildPhases = (
+				3A86C4740033DB9F4C783054 /* [CP] Check Pods Manifest.lock */,
 				D508BAA626DC1B48004A0341 /* Sources */,
 				D508BAA726DC1B48004A0341 /* Frameworks */,
 				D508BAA826DC1B48004A0341 /* Resources */,
+				397A600CB5EE7B26E7662A32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,25 +309,85 @@
 			files = (
 				D508BAB526DC1B49004A0341 /* Preview Assets.xcassets in Resources */,
 				D508BAB226DC1B49004A0341 /* Assets.xcassets in Resources */,
+				D54DF16226DF1A6200F8B189 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		397A600CB5EE7B26E7662A32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Order Ahead/Pods-Order Ahead-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Order Ahead/Pods-Order Ahead-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Order Ahead/Pods-Order Ahead-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A86C4740033DB9F4C783054 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Order Ahead-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D508BAA626DC1B48004A0341 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52863E526EE7B6400DACA2B /* SessionStore.swift in Sources */,
+				D5D5F5AB26E7C50E00B24B0D /* BusinessListView.swift in Sources */,
+				D52863E226ED58AC00DACA2B /* ItemListFormView.swift in Sources */,
 				D508BAB026DC1B48004A0341 /* ItemCard.swift in Sources */,
+				D5217F9426E1216E008CB381 /* Profile.swift in Sources */,
+				D5A6EEF626E554AF000D70B6 /* BackendModel.swift in Sources */,
+				D5D5F53B26E7C1FE00B24B0D /* AuthenticationService.swift in Sources */,
+				D5D5F4C426E7BDD900B24B0D /* Business.swift in Sources */,
 				D508BACB26DC4684004A0341 /* TypeCard.swift in Sources */,
+				D5D5F5AC26E7C50E00B24B0D /* NewBusinessForm.swift in Sources */,
+				D5BC9B3D26EA9FD300B031ED /* TopLeft.swift in Sources */,
+				D5D5F54126E7C23B00B24B0D /* BusinessViewModel.swift in Sources */,
+				D5D5F5AA26E7C50E00B24B0D /* BusinessView.swift in Sources */,
 				D508BAD526DC7F3A004A0341 /* StoreView.swift in Sources */,
 				D508BABE26DC3CDF004A0341 /* Item.swift in Sources */,
 				D508BACF26DC47FB004A0341 /* ItemList.swift in Sources */,
 				D5883CCF26DD9F3A006A6C62 /* VTabView.swift in Sources */,
 				D508BAAE26DC1B48004A0341 /* Order_AheadApp.swift in Sources */,
+				D5A6EEF126E51784000D70B6 /* StripeCard.swift in Sources */,
 				D508BAC726DC45EF004A0341 /* TypeListView.swift in Sources */,
+				D5A6EEFA26E69E75000D70B6 /* ContentView.swift in Sources */,
+				D5FEDA5726DF39BF007DB078 /* LoginView.swift in Sources */,
+				D5FEDA5226DF1F53007DB078 /* AppDelegate.swift in Sources */,
 				D508BAC326DC4143004A0341 /* ItemListView.swift in Sources */,
+				D5D5F54426E7C33800B24B0D /* BusinessListViewModel.swift in Sources */,
+				D5D5F4C026E7BD0100B24B0D /* BusinessRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +451,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -285,6 +506,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -292,6 +514,7 @@
 		};
 		D508BABA26DC1B49004A0341 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58A298B699D271FB10720EC1 /* Pods-Order Ahead.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +537,7 @@
 		};
 		D508BABB26DC1B49004A0341 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 145FC4A7B2DBB755B495A473 /* Pods-Order Ahead.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

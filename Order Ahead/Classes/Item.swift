@@ -7,12 +7,13 @@
 
 import Foundation
 
-struct Item: Identifiable, Codable, Hashable {
-    var id: Int
+struct ItemModel: Identifiable, Codable {
+    var id = UUID()
     var name: String
     var ingredients: String
     var itemArtString: String
     var price: Int
     
-}
+    
 
+}

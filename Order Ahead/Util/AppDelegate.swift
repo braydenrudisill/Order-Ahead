@@ -21,22 +21,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         FirebaseConfiguration.shared.setLoggerLevel(.min)
         FirebaseApp.configure()
         StripeAPI.defaultPublishableKey = "pk_test_51J3O5IKIZgLeu6ZOEvabdNN72hE32MuErvyzm6QZJbhliUf4rjDPj8HrxXGS7yBeZUqg0AenTBCyOLlnb68j2nWT009ADTXA2b"
-//        let functions = Functions.functions()
-//        functions.httpsCallable("getStripePublishableKey").call { (response, error) in
-//            if let error = error {
-//                print("\nERROR\n")
-//                print(error)
-//            }
-//            if let response = (response?.data as? [String: Any]) {
-//                let stripePublishableKey = response["stripepublishablekey"] as! String?
-//                StripeAPI.defaultPublishableKey = stripePublishableKey!
-//                print("\nSTRIPE PUBLIC KEY\n")
-//                print(stripePublishableKey as Any)
-//            }
-//        }
-        
-        
-        
         return true
     }
 }

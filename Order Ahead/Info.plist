@@ -25,7 +25,7 @@
 			<string> ${BUNDLE_IDENTIFIER}</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>accept-a-payment</string>
+				<string>orderahead</string>
 			</array>
 		</dict>
 	</array>

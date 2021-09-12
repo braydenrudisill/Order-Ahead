@@ -9,15 +9,13 @@ import Foundation
 import FirebaseFirestoreSwift
 
 struct Business: Identifiable, Codable {
-  @DocumentID var id: String?
-  var question: String
-  var answer: String
-  var successful: Bool = true
-  var userId: String?
+    @DocumentID var id: String?
+    var name: String
+    var menu: [ItemList]
 }
 
 #if DEBUG
 let testData = (1...10).map { i in
-  Business(question: "Question #\(i)", answer: "Answer #\(i)")
+    Business(name: "Restaurant \(i)", menu: typeList)
 }
 #endif

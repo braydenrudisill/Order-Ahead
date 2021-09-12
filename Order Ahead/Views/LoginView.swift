@@ -24,11 +24,9 @@ struct LoginView : View {
     @State var isRedirecting = false
     
     func login() {
-        
         self.hideKeyboard()
         self.isFocused = false
         self.isLoading = true
-        
         
         Auth.auth().signIn(withEmail: profile.email, password: password) { (result, error) in
             self.isLoading = false
@@ -38,13 +36,6 @@ struct LoginView : View {
             } else {
                 print("Login!")
                 self.isSuccessful = true
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
-                    print("Clear email / password")
-                    self.isSuccessful = false
-                    self.profile.email = ""
-                    self.password = ""
-                }
             }
         }
     }
@@ -54,62 +45,60 @@ struct LoginView : View {
     }
     
     var body: some View {
-        NavigationView {
-                ZStack {
-                    VStack {
-                        WelcomeText()
-                        UserImage()
-                        TextField("Email", text: $profile.email)
-                            .padding()
-                            .background(lightGreyColor)
-                            .cornerRadius(1.0)
-                            .padding(.bottom, 20)
-                        SecureField("Password", text: $password)
-                            .padding()
-                            .background(lightGreyColor)
-                            .cornerRadius(1.0)
-                            .padding(.bottom, 20)
-                        Button(action: { login() }) {
-                            LoginButtonContent()
-                        }
-                        .padding(.bottom, 120)
-                        .alert(isPresented: $showAlert) {
-                            Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
-                        }
-                    }
-                    if isSuccessful {
-                        ZStack {
-                            Color.white
-                            VStack {
-                                Text("Successfully Logged In!")
-                                Spacer()
-                                Button(action: {
-                                    self.isSuccessful = false
-                                    self.isRedirecting = true
-                                }, label: {
-                                    Text("Continue")
-                                })
-                            }.padding()
-                        }
-                        .frame(width: 300, height: 200)
-                        .cornerRadius(20).shadow(radius: 20)
-                        .padding(.bottom, 100)
-                    } else if isLoading {
-                        ZStack {
-                            Color.white
-                            VStack {
-                                Text("Logging in...")
-                                Spacer()
-                            }.padding()
-                        }
-                        .frame(width: 300, height: 200)
-                        .cornerRadius(20).shadow(radius: 20)
-                        .padding(.bottom, 100)
-                    }
-                    NavigationLink("", destination: StoreView() .navigationBarHidden(true), isActive: $isRedirecting)
+        ZStack {
+            VStack {
+                WelcomeText()
+                UserImage()
+                TextField("Email", text: $profile.email)
+                    .padding()
+                    .background(lightGreyColor)
+                    .cornerRadius(1.0)
+                    .padding(.bottom, 20)
+                SecureField("Password", text: $password)
+                    .padding()
+                    .background(lightGreyColor)
+                    .cornerRadius(1.0)
+                    .padding(.bottom, 20)
+                Button(action: { login() }) {
+                    LoginButtonContent()
                 }
-            .padding()
+                .padding(.bottom, 120)
+                .alert(isPresented: $showAlert) {
+                    Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+                }
+            }
+            if isSuccessful {
+                ZStack {
+                    Color.white
+                    VStack {
+                        Text("Successfully Logged In!")
+                        Spacer()
+                        Button(action: {
+                            self.isSuccessful = false
+                            self.isRedirecting = true
+                        }, label: {
+                            Text("Continue")
+                        })
+                    }.padding()
+                }
+                .frame(width: 300, height: 200)
+                .cornerRadius(20).shadow(radius: 20)
+                .padding(.bottom, 100)
+            } else if isLoading {
+                ZStack {
+                    Color.white
+                    VStack {
+                        Text("Logging in...")
+                        Spacer()
+                    }.padding()
+                }
+                .frame(width: 300, height: 200)
+                .cornerRadius(20).shadow(radius: 20)
+                .padding(.bottom, 100)
+            }
+            NavigationLink("", destination: BusinessListView() .navigationBarHidden(true), isActive: $isRedirecting)
         }
+        .padding()
     }
 }
 
@@ -144,7 +133,6 @@ struct WelcomeText: View {
 struct LoginButtonContent: View {
     var body: some View {
         Text("LOGIN")
-//            .font(.headline)
             .bold()
             .foregroundColor(.white)
             .padding()
