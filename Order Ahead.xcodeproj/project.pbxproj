@@ -20,16 +20,18 @@
 		D508BAD526DC7F3A004A0341 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508BAD426DC7F3A004A0341 /* StoreView.swift */; };
 		D5217F9426E1216E008CB381 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5217F9326E1216E008CB381 /* Profile.swift */; };
 		D52863E226ED58AC00DACA2B /* ItemListFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52863E126ED58AC00DACA2B /* ItemListFormView.swift */; };
-		D52863E526EE7B6400DACA2B /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52863E426EE7B6400DACA2B /* SessionStore.swift */; };
+		D52863E526EE7B6400DACA2B /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52863E426EE7B6400DACA2B /* AppViewModel.swift */; };
+		D52863EB26EE7F6E00DACA2B /* CreateBusinessAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52863EA26EE7F6E00DACA2B /* CreateBusinessAccountView.swift */; };
 		D54DF16226DF1A6200F8B189 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D54DF16126DF1A6200F8B189 /* GoogleService-Info.plist */; };
 		D5883CCF26DD9F3A006A6C62 /* VTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5883CCE26DD9F3A006A6C62 /* VTabView.swift */; };
 		D5A6EEF126E51784000D70B6 /* StripeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A6EEF026E51784000D70B6 /* StripeCard.swift */; };
 		D5A6EEF626E554AF000D70B6 /* BackendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A6EEF526E554AF000D70B6 /* BackendModel.swift */; };
 		D5A6EEFA26E69E75000D70B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A6EEF926E69E75000D70B6 /* ContentView.swift */; };
+		D5A954E82710FC40000B6B17 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A954E72710FC40000B6B17 /* Dashboard.swift */; };
+		D5AA7600276EBCB80091913E /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA75FF276EBCB80091913E /* AuthenticationService.swift */; };
 		D5BC9B3D26EA9FD300B031ED /* TopLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BC9B3C26EA9FD300B031ED /* TopLeft.swift */; };
 		D5D5F4C026E7BD0100B24B0D /* BusinessRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F4BF26E7BD0100B24B0D /* BusinessRepository.swift */; };
 		D5D5F4C426E7BDD900B24B0D /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F4C326E7BDD900B24B0D /* Business.swift */; };
-		D5D5F53B26E7C1FE00B24B0D /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F53A26E7C1FE00B24B0D /* AuthenticationService.swift */; };
 		D5D5F54126E7C23B00B24B0D /* BusinessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F54026E7C23B00B24B0D /* BusinessViewModel.swift */; };
 		D5D5F54426E7C33800B24B0D /* BusinessListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F54326E7C33800B24B0D /* BusinessListViewModel.swift */; };
 		D5D5F5AA26E7C50E00B24B0D /* BusinessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F5A726E7C50E00B24B0D /* BusinessView.swift */; };
@@ -56,16 +58,18 @@
 		D508BAD426DC7F3A004A0341 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		D5217F9326E1216E008CB381 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		D52863E126ED58AC00DACA2B /* ItemListFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListFormView.swift; sourceTree = "<group>"; };
-		D52863E426EE7B6400DACA2B /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		D52863E426EE7B6400DACA2B /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		D52863EA26EE7F6E00DACA2B /* CreateBusinessAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBusinessAccountView.swift; sourceTree = "<group>"; };
 		D54DF16126DF1A6200F8B189 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5883CCE26DD9F3A006A6C62 /* VTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTabView.swift; sourceTree = "<group>"; };
 		D5A6EEF026E51784000D70B6 /* StripeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeCard.swift; sourceTree = "<group>"; };
 		D5A6EEF526E554AF000D70B6 /* BackendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendModel.swift; sourceTree = "<group>"; };
 		D5A6EEF926E69E75000D70B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D5A954E72710FC40000B6B17 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		D5AA75FF276EBCB80091913E /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		D5BC9B3C26EA9FD300B031ED /* TopLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLeft.swift; sourceTree = "<group>"; };
 		D5D5F4BF26E7BD0100B24B0D /* BusinessRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRepository.swift; sourceTree = "<group>"; };
 		D5D5F4C326E7BDD900B24B0D /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
-		D5D5F53A26E7C1FE00B24B0D /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		D5D5F54026E7C23B00B24B0D /* BusinessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessViewModel.swift; sourceTree = "<group>"; };
 		D5D5F54326E7C33800B24B0D /* BusinessListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewModel.swift; sourceTree = "<group>"; };
 		D5D5F5A726E7C50E00B24B0D /* BusinessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessView.swift; sourceTree = "<group>"; };
@@ -172,8 +176,8 @@
 		D52863E926EE7CC500DACA2B /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				D5D5F53A26E7C1FE00B24B0D /* AuthenticationService.swift */,
-				D52863E426EE7B6400DACA2B /* SessionStore.swift */,
+				D5AA75FF276EBCB80091913E /* AuthenticationService.swift */,
+				D52863E426EE7B6400DACA2B /* AppViewModel.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -220,7 +224,9 @@
 				D5D5F5A726E7C50E00B24B0D /* BusinessView.swift */,
 				D5D5F5A826E7C50E00B24B0D /* BusinessListView.swift */,
 				D5D5F5A926E7C50E00B24B0D /* NewBusinessForm.swift */,
+				D52863EA26EE7F6E00DACA2B /* CreateBusinessAccountView.swift */,
 				D52863E126ED58AC00DACA2B /* ItemListFormView.swift */,
+				D5A954E72710FC40000B6B17 /* Dashboard.swift */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -230,6 +236,7 @@
 			children = (
 				D52863E726EE7C7F00DACA2B /* Menu */,
 				D5D5F5A626E7C50E00B24B0D /* Business */,
+				D5A6EEF926E69E75000D70B6 /* ContentView.swift */,
 				D5FEDA5626DF39BF007DB078 /* LoginView.swift */,
 				D5A6EEF026E51784000D70B6 /* StripeCard.swift */,
 			);
@@ -241,7 +248,6 @@
 			children = (
 				D52863E826EE7CAE00DACA2B /* Custom Views */,
 				D52863E926EE7CC500DACA2B /* Firebase */,
-				D5A6EEF926E69E75000D70B6 /* ContentView.swift */,
 				D5FEDA5126DF1F53007DB078 /* AppDelegate.swift */,
 				D508BAAD26DC1B48004A0341 /* Order_AheadApp.swift */,
 			);
@@ -362,18 +368,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D52863E526EE7B6400DACA2B /* SessionStore.swift in Sources */,
+				D52863E526EE7B6400DACA2B /* AppViewModel.swift in Sources */,
 				D5D5F5AB26E7C50E00B24B0D /* BusinessListView.swift in Sources */,
 				D52863E226ED58AC00DACA2B /* ItemListFormView.swift in Sources */,
 				D508BAB026DC1B48004A0341 /* ItemCard.swift in Sources */,
 				D5217F9426E1216E008CB381 /* Profile.swift in Sources */,
 				D5A6EEF626E554AF000D70B6 /* BackendModel.swift in Sources */,
-				D5D5F53B26E7C1FE00B24B0D /* AuthenticationService.swift in Sources */,
 				D5D5F4C426E7BDD900B24B0D /* Business.swift in Sources */,
 				D508BACB26DC4684004A0341 /* TypeCard.swift in Sources */,
 				D5D5F5AC26E7C50E00B24B0D /* NewBusinessForm.swift in Sources */,
 				D5BC9B3D26EA9FD300B031ED /* TopLeft.swift in Sources */,
+				D52863EB26EE7F6E00DACA2B /* CreateBusinessAccountView.swift in Sources */,
 				D5D5F54126E7C23B00B24B0D /* BusinessViewModel.swift in Sources */,
+				D5AA7600276EBCB80091913E /* AuthenticationService.swift in Sources */,
 				D5D5F5AA26E7C50E00B24B0D /* BusinessView.swift in Sources */,
 				D508BAD526DC7F3A004A0341 /* StoreView.swift in Sources */,
 				D508BABE26DC3CDF004A0341 /* Item.swift in Sources */,
@@ -387,6 +394,7 @@
 				D5FEDA5226DF1F53007DB078 /* AppDelegate.swift in Sources */,
 				D508BAC326DC4143004A0341 /* ItemListView.swift in Sources */,
 				D5D5F54426E7C33800B24B0D /* BusinessListViewModel.swift in Sources */,
+				D5A954E82710FC40000B6B17 /* Dashboard.swift in Sources */,
 				D5D5F4C026E7BD0100B24B0D /* BusinessRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +538,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yakden.Order-Ahead";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
