@@ -24,7 +24,7 @@ struct BusinessListView: View {
         Spacer()
       }
       .sheet(isPresented: $showForm) {
-        NewBusinessForm(menu: typeList, businessListViewModel: BusinessListViewModel())
+        NewBusinessForm(uid: "", menu: typeList)
       }
 //      .navigationBarTitle("Fire Business")
       // swiftlint:disable multiple_closures_with_trailing_closure

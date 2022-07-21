@@ -40,17 +40,34 @@ struct Order_AheadApp: App {
     
     var body: some Scene {
         WindowGroup {
+            let viewModel = AppViewModel()
+//            let businessListViewModel = BusinessListViewModel()
             ContentView()
-            .onOpenURL(perform: { url in
-                let stripeHandled = StripeAPI.handleURLCallback(with: url)
-                print(url)
-                print("YOO")
-                if(stripeHandled) {
-                    // Redirect to dashboard
-                } else {
-                    // Not a stripe URL, meant to handle normally
-                }
-            })
+                .environmentObject(viewModel)
+//                .environmentObject(businessListViewModel)
+                .onOpenURL(perform: { url in
+                    let stripeHandled = StripeAPI.handleURLCallback(with: url)
+                    print("stripehandled? \(stripeHandled)")
+                    print("YOO")
+                    viewModel.businessListViewModel.businessRepository.store.collection("businesses").whereField("uid", isEqualTo: viewModel.auth.currentUser!.uid)
+                        .getDocuments() { (querySnapshot, err) in
+                            if let err = err {
+                                print("❌ Error getting businesses: \(err)")
+                            } else {
+                                for document in querySnapshot!.documents {
+                                    viewModel.business = try! document.data(as: Business.self)!
+                                    print("Just fetched \(viewModel.business.name)")
+                                }
+                            }
+                        }
+                    if(stripeHandled) {
+                        
+                        print("Setup: \(viewModel.setUp)")
+                        print("Signed in: \(viewModel.signedIn)")
+                    } else {
+                        // Not a stripe URL, meant to handle normally
+                    }
+                })
         }
     }
 }

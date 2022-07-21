@@ -7,11 +7,18 @@
 
 import SwiftUI
 import Stripe
+import FirebaseFirestore
+// todo, make the business an environment variable like the viewmodel in content view
 
 struct StripeCard: View {
+    var business: Business
     @ObservedObject var model = BackendModel()
     @State var loading = false
     @State var paymentMethodParams: STPPaymentMethodParams?
+    @State var showingAlert = false
+    var order: OrderModel
+    let ref = Firestore.firestore()
+    
     
     var body: some View {
         VStack {
@@ -30,7 +37,8 @@ struct StripeCard: View {
             }
             // pay button
         }.onAppear {
-            model.preparePaymentIntent(paymentMethodType: "card", currency: "usd", connectedAccID: "acct_1JWwXy2fR3SCGSyZ")
+            print("Preparing to send to stripe account id \(business.stripeaccountid)")
+            model.preparePaymentIntent(paymentMethodType: "card", currency: "usd", connectedAccID: business.stripeaccountid)
         }
         
         if let paymentStatus = model.paymentStatus {
@@ -38,6 +46,9 @@ struct StripeCard: View {
                 switch paymentStatus {
                 case .succeeded:
                     Text("Payment complete!")
+                        .onAppear(){
+                            sendOrder()
+                        }
                 case .failed:
                     Text("Payment failed!")
                 case .canceled:
@@ -48,10 +59,21 @@ struct StripeCard: View {
             }
         }
     }
-}
-
-struct StripeCard_Previews: PreviewProvider {
-    static var previews: some View{
-        StripeCard()
+    
+    func sendOrder() {
+        let _ = try? ref.collection("orders").addDocument(from: order) { (err) in
+            if err != nil {
+                print(err!.localizedDescription)
+                return
+            }
+        }
+        
+        showingAlert = true
     }
 }
+
+//struct StripeCard_Previews: PreviewProvider {
+//    static var previews: some View{
+//        StripeCard(item: ItemModel())
+//    }
+//}

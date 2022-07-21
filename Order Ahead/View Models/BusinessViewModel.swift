@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 class BusinessViewModel: ObservableObject, Identifiable {
-  private let businessRepository = BusinessRepository()
+  private static let businessRepository = BusinessRepository()
   @Published var business: Business
   private var cancellables: Set<AnyCancellable> = []
   var id = ""
@@ -23,10 +23,10 @@ class BusinessViewModel: ObservableObject, Identifiable {
   }
 
   func update(business: Business) {
-    businessRepository.update(business)
+    BusinessViewModel.businessRepository.update(business)
   }
 
   func remove() {
-    businessRepository.remove(business)
+    BusinessViewModel.businessRepository.remove(business)
   }
 }

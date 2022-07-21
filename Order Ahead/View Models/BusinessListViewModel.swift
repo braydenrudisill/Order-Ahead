@@ -11,12 +11,15 @@ import Combine
 
 // 2
 class BusinessListViewModel: ObservableObject {
+    private static var numInstances = 0
   @Published var businessViewModels: [BusinessViewModel] = []
   private var cancellables: Set<AnyCancellable> = []
 
   @Published var businessRepository = BusinessRepository()
 
   init() {
+    BusinessListViewModel.numInstances += 1
+    print("Number of List View Models: \(BusinessListViewModel.numInstances)")
     businessRepository.$businesses.map { business in
       business.map(BusinessViewModel.init)
     }
@@ -24,7 +27,7 @@ class BusinessListViewModel: ObservableObject {
     .store(in: &cancellables)
   }
 
-  func add(_ business: Business) {
-    businessRepository.add(business)
+  func add(_ business: Business) -> String{
+    return businessRepository.add(business)
   }
 }

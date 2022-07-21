@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct TypeCard: View {
-    
+    @EnvironmentObject var business: Business
+    @EnvironmentObject var cart: OrderModel
+    @State private var clicked = false
     var itemlist: ItemList
-    @State private var clicked: Bool = false;
-    
     var body: some View {
         
         NavigationLink(destination: ItemListView(itemlist: itemlist), isActive: $clicked) {
@@ -48,18 +48,18 @@ struct TypeCard: View {
     
     
 }
-
-struct TypeCard_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            TypeCard(itemlist: milkList)
-                .previewLayout(.fixed(width: 300, height: 510))
-            TypeCard(itemlist: teaList)
-                .previewLayout(.fixed(width: 300, height: 510))
-            TypeCard(itemlist: coffeeList)
-                .previewLayout(.fixed(width: 300, height: 510))
-            TypeCard(itemlist: fruitList)
-                .previewLayout(.fixed(width: 300, height: 510))
-        }
-    }
-}
+//
+//struct TypeCard_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Group {
+//            TypeCard(itemlist: milkList)
+//                .previewLayout(.fixed(width: 300, height: 510))
+//            TypeCard(itemlist: teaList)
+//                .previewLayout(.fixed(width: 300, height: 510))
+//            TypeCard(itemlist: coffeeList)
+//                .previewLayout(.fixed(width: 300, height: 510))
+//            TypeCard(itemlist: fruitList)
+//                .previewLayout(.fixed(width: 300, height: 510))
+//        }
+//    }
+//}

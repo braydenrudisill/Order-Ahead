@@ -22,6 +22,7 @@
 		D52863E226ED58AC00DACA2B /* ItemListFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52863E126ED58AC00DACA2B /* ItemListFormView.swift */; };
 		D52863E526EE7B6400DACA2B /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52863E426EE7B6400DACA2B /* AppViewModel.swift */; };
 		D52863EB26EE7F6E00DACA2B /* CreateBusinessAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52863EA26EE7F6E00DACA2B /* CreateBusinessAccountView.swift */; };
+		D53C628227A5C972000AA76B /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C628127A5C972000AA76B /* CartView.swift */; };
 		D54DF16226DF1A6200F8B189 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D54DF16126DF1A6200F8B189 /* GoogleService-Info.plist */; };
 		D5883CCF26DD9F3A006A6C62 /* VTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5883CCE26DD9F3A006A6C62 /* VTabView.swift */; };
 		D5A6EEF126E51784000D70B6 /* StripeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A6EEF026E51784000D70B6 /* StripeCard.swift */; };
@@ -29,6 +30,7 @@
 		D5A6EEFA26E69E75000D70B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A6EEF926E69E75000D70B6 /* ContentView.swift */; };
 		D5A954E82710FC40000B6B17 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A954E72710FC40000B6B17 /* Dashboard.swift */; };
 		D5AA7600276EBCB80091913E /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA75FF276EBCB80091913E /* AuthenticationService.swift */; };
+		D5AA7605276EC3C20091913E /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA7604276EC3C20091913E /* OrderModel.swift */; };
 		D5BC9B3D26EA9FD300B031ED /* TopLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BC9B3C26EA9FD300B031ED /* TopLeft.swift */; };
 		D5D5F4C026E7BD0100B24B0D /* BusinessRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F4BF26E7BD0100B24B0D /* BusinessRepository.swift */; };
 		D5D5F4C426E7BDD900B24B0D /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F4C326E7BDD900B24B0D /* Business.swift */; };
@@ -60,6 +62,7 @@
 		D52863E126ED58AC00DACA2B /* ItemListFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListFormView.swift; sourceTree = "<group>"; };
 		D52863E426EE7B6400DACA2B /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		D52863EA26EE7F6E00DACA2B /* CreateBusinessAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBusinessAccountView.swift; sourceTree = "<group>"; };
+		D53C628127A5C972000AA76B /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		D54DF16126DF1A6200F8B189 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5883CCE26DD9F3A006A6C62 /* VTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTabView.swift; sourceTree = "<group>"; };
 		D5A6EEF026E51784000D70B6 /* StripeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeCard.swift; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		D5A6EEF926E69E75000D70B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D5A954E72710FC40000B6B17 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		D5AA75FF276EBCB80091913E /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		D5AA7604276EC3C20091913E /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		D5BC9B3C26EA9FD300B031ED /* TopLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLeft.swift; sourceTree = "<group>"; };
 		D5D5F4BF26E7BD0100B24B0D /* BusinessRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRepository.swift; sourceTree = "<group>"; };
 		D5D5F4C326E7BDD900B24B0D /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
@@ -133,9 +137,9 @@
 				D5D5F53D26E7C22900B24B0D /* View Models */,
 				D5D5F4BE26E7BCE800B24B0D /* Repositories */,
 				D5FEDA5426DF230A007DB078 /* Views */,
-				D5FEDA5526DF2351007DB078 /* Util */,
 				D5A6EEF326E55484000D70B6 /* Classes */,
 				D5A6EEF426E55497000D70B6 /* Model */,
+				D5FEDA5526DF2351007DB078 /* Util */,
 				D508BAB126DC1B49004A0341 /* Assets.xcassets */,
 				D54DF16126DF1A6200F8B189 /* GoogleService-Info.plist */,
 				D508BAB626DC1B49004A0341 /* Info.plist */,
@@ -160,6 +164,7 @@
 				D508BACA26DC4684004A0341 /* TypeCard.swift */,
 				D508BAC226DC4143004A0341 /* ItemListView.swift */,
 				D508BAAF26DC1B48004A0341 /* ItemCard.swift */,
+				D53C628127A5C972000AA76B /* CartView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				D5A6EEF526E554AF000D70B6 /* BackendModel.swift */,
+				D5AA7604276EC3C20091913E /* OrderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,8 +227,8 @@
 		D5D5F5A626E7C50E00B24B0D /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				D5D5F5A726E7C50E00B24B0D /* BusinessView.swift */,
 				D5D5F5A826E7C50E00B24B0D /* BusinessListView.swift */,
+				D5D5F5A726E7C50E00B24B0D /* BusinessView.swift */,
 				D5D5F5A926E7C50E00B24B0D /* NewBusinessForm.swift */,
 				D52863EA26EE7F6E00DACA2B /* CreateBusinessAccountView.swift */,
 				D52863E126ED58AC00DACA2B /* ItemListFormView.swift */,
@@ -368,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53C628227A5C972000AA76B /* CartView.swift in Sources */,
 				D52863E526EE7B6400DACA2B /* AppViewModel.swift in Sources */,
 				D5D5F5AB26E7C50E00B24B0D /* BusinessListView.swift in Sources */,
 				D52863E226ED58AC00DACA2B /* ItemListFormView.swift in Sources */,
@@ -396,6 +403,7 @@
 				D5D5F54426E7C33800B24B0D /* BusinessListViewModel.swift in Sources */,
 				D5A954E82710FC40000B6B17 /* Dashboard.swift in Sources */,
 				D5D5F4C026E7BD0100B24B0D /* BusinessRepository.swift in Sources */,
+				D5AA7605276EC3C20091913E /* OrderModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +467,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};

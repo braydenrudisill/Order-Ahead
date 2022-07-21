@@ -23,21 +23,31 @@ struct LoginView : View {
     @State var isSuccessful = false
     @State var isRedirecting = false
     
+    @EnvironmentObject var viewModel: AppViewModel
+    
     func login() {
         self.hideKeyboard()
         self.isFocused = false
         self.isLoading = true
+        viewModel.signIn(email: profile.email, password: password)
         
-        Auth.auth().signIn(withEmail: profile.email, password: password) { (result, error) in
-            self.isLoading = false
-            if error != nil {
-                self.alertMessage = error?.localizedDescription ?? ""
-                self.showAlert = true
-            } else {
-                print("Login!")
-                self.isSuccessful = true
-            }
-        }
+        
+        // TODO maybe instead of all this we could have a set of states in the view model like signedIn
+        // but for isLoading or hasErrored?
+        
+        // or could also try returning a result / error so we can handle it the same way here
+        // either one lol i'll have to see
+        
+//        Auth.auth().signIn(withEmail: profile.email, password: password) { (result, error) in
+//            self.isLoading = false
+//            if error != nil {
+//                self.alertMessage = error?.localizedDescription ?? ""
+//                self.showAlert = true
+//            } else {
+//                print("Login!")
+//                self.isSuccessful = true
+//            }
+//        }
     }
     
     func hideKeyboard() {
@@ -60,7 +70,7 @@ struct LoginView : View {
                     .cornerRadius(1.0)
                     .padding(.bottom, 20)
                 Button(action: { login() }) {
-                    LoginButtonContent()
+                    ButtonContent(text: "LOGIN")
                 }
                 .padding(.bottom, 120)
                 .alert(isPresented: $showAlert) {
@@ -96,7 +106,13 @@ struct LoginView : View {
                 .cornerRadius(20).shadow(radius: 20)
                 .padding(.bottom, 100)
             }
-            NavigationLink("", destination: BusinessListView() .navigationBarHidden(true), isActive: $isRedirecting)
+            
+            // maybe we could have a document of all the business account names and everyone else would just be a user
+            // loop through that documents names
+            // if the uid is on there, redirect to the dashboard / newbusinessform setup thing
+            // if not go to the normal business list view or like a home view or smth
+            NavigationLink("", destination: NewBusinessForm(uid: viewModel.auth.currentUser?.uid ?? "no uid", menu: typeList), isActive: $viewModel.signedIn)
+//            NavigationLink("", destination: BusinessListView() .navigationBarHidden(true), isActive: $isRedirecting)
         }
         .padding()
     }
@@ -130,9 +146,10 @@ struct WelcomeText: View {
     }
 }
 
-struct LoginButtonContent: View {
+struct ButtonContent: View {
+    var text: String
     var body: some View {
-        Text("LOGIN")
+        Text(text)
             .bold()
             .foregroundColor(.white)
             .padding()

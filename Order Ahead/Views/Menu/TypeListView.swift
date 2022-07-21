@@ -8,30 +8,20 @@
 import SwiftUI
 
 struct TypeListView: View {
-    
+    @EnvironmentObject var business: Business
+    @EnvironmentObject var cart: OrderModel
+    @State var toCart = false
     var body: some View {
-//        HStack {
-//            VStack {
-//                ForEach(0 ..< typeList.count) { i in
-//                    if(i%2==0) {TypeCard(itemlist: typeList[i])}
-//                }
-//            }
-//            VStack {
-//                ForEach(0 ..< typeList.count) { i in
-//                    if(i%2==1) {TypeCard(itemlist: typeList[i])}
-//                }
-//            }
-//        }
         VStack(spacing: 7) {
-            ForEach(0 ..< typeList.count/2) { i in
+            ForEach(0 ..< business.menu.count/2) { i in
                 HStack(spacing: 7) {
                     
-                    TypeCard(itemlist: typeList[2*i])
-                    TypeCard(itemlist: typeList[2*i+1])
+                    TypeCard(itemlist: business.menu[2*i])
+                    TypeCard(itemlist: business.menu[2*i+1])
                 }
             }
             if(typeList.count%2==1) {
-                TypeCard(itemlist: typeList[typeList.count-1])
+                TypeCard(itemlist: business.menu[business.menu.count-1])
             }
         }
     }

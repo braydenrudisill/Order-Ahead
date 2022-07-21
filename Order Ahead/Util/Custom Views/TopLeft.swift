@@ -26,5 +26,26 @@ struct TopLeft<Content: View>: View {
     }
    }
 }
+   
+import SwiftUI
+
+// View Builder
+struct BotRight<Content: View>: View {
+    let content: Content
+
+    init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
+
+    var body: some View {
+        HStack() {
+            Spacer()
+            VStack(alignment: .leading) {
+                Spacer()
+                content
+            }
+        }
+    }
+}
 
 

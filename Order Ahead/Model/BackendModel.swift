@@ -26,6 +26,7 @@ class BackendModel: ObservableObject {
         let json: [String: Any] = [
             "paymentMethodType": paymentMethodType,
             "currency": currency,
+            "connectedAccID": connectedAccID,
         ]
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
